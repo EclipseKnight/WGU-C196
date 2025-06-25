@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="?attr/actionBarSize"
+            tools:context=".ui.terms.TermDetailsActivity">
+
+            <!-- Remaining weeks row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/remainingWeeksValue2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/remainingView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="@string/term_remaining_weeks"
+                    android:textSize="20sp"
+                    android:gravity="start" />
+
+                <TextView
+                    android:id="@+id/termView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textSize="15sp"
+                    android:gravity="start" />
+            </LinearLayout>
+
+            <!-- Instructor Info Header -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/instructor_information"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/primaryTextColor"
+                android:layout_marginTop="20dp"/>
+
+            <!-- Instructor Name -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/instructor_name"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/instructorName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/instructor_name" />
+            </LinearLayout>
+
+            <!-- Instructor Phone -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/instructor_phone"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/instructorPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/instructor_phone" />
+            </LinearLayout>
+
+            <!-- Instructor Email -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/instructor_email"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/instructorEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/instructor_email" />
+            </LinearLayout>
+
+            <!-- Optional Notes Label -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/course_optional_notes"
+                android:textSize="15sp"
+                android:gravity="start"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp" />
+
+            <!-- Optional Notes Content -->
+            <TextView
+                android:id="@+id/termViewNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp" />
+
+            <!-- Assessment Buttons in pairs -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:weightSum="2">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/assessment_button_first"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="13dp"
+                    android:padding="35dp"
+                    android:textColor="@color/primaryTextColor"
+                    style="@style/Widget.MaterialComponents.Button"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/assessment_button_second"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="13dp"
+                    android:padding="35dp"
+                    android:textColor="@color/primaryTextColor"
+                    style="@style/Widget.MaterialComponents.Button"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:weightSum="2">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/assessment_button_third"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="13dp"
+                    android:padding="35dp"
+                    android:textColor="@color/primaryTextColor"
+                    style="@style/Widget.MaterialComponents.Button"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/assessment_button_fourth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="13dp"
+                    android:padding="35dp"
+                    android:textColor="@color/primaryTextColor"
+                    style="@style/Widget.MaterialComponents.Button"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:weightSum="2">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/assessment_button_fifth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="13dp"
+                    android:padding="35dp"
+                    android:textColor="@color/primaryTextColor"
+                    style="@style/Widget.MaterialComponents.Button"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/assessment_button_sixth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="13dp"
+                    android:padding="35dp"
+                    android:textColor="@color/primaryTextColor"
+                    style="@style/Widget.MaterialComponents.Button"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:weightSum="2">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/assessment_button_seventh"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="13dp"
+                    android:padding="35dp"
+                    android:textColor="@color/primaryTextColor"
+                    style="@style/Widget.MaterialComponents.Button"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/assessment_button_eighth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="13dp"
+                    android:padding="35dp"
+                    android:textColor="@color/primaryTextColor"
+                    style="@style/Widget.MaterialComponents.Button"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:weightSum="2"
+                android:layout_marginBottom="20dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/assessment_button_ninth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="13dp"
+                    android:padding="35dp"
+                    android:textColor="@color/primaryTextColor"
+                    style="@style/Widget.MaterialComponents.Button"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/assessment_button_tenth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="13dp"
+                    android:padding="35dp"
+                    android:textColor="@color/primaryTextColor"
+                    style="@style/Widget.MaterialComponents.Button"/>
+            </LinearLayout>
+
+            <!-- Spacer so content isn't hidden behind bottom button -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="17dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="@string/fab_button"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

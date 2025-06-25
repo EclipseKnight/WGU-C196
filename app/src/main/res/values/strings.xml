@@ -1,0 +1,58 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="welcome">Welcome to Student progress tracking application.</string>
+    <string name="welcome_desc">Please report any bugs or concerns to jpaqui2@wgu.edu.</string>
+    <string name="welcome_button_text">Tap to Begin</string>
+    <string name="fab_button">FAB</string>
+    <string name="term_title">Term Title:</string>
+    <string name="term_start_date">Start Date:</string>
+    <string name="term_date_text">MAY 01 2022</string>
+    <string name="term_end_date">End Date:</string>
+    <string name="term_button_text">Add Term</string>
+    <string name="term_button_text_edit">Save Edits</string>
+    <string name="term_remaining_weeks">Remaining \nWeeks</string>
+    <string name="course_title">Course Title:</string>
+    <string name="course_status">Status:</string>
+    <string name="course_instructor_info">Instructor Information:</string>
+    <string name="course_instructor_name">Full Name:</string>
+    <string name="course_instructor_phone">Phone Number:</string>
+    <string name="course_instructor_email">Email Address:</string>
+    <string name="course_instructor_notes">Optional Note(s):</string>
+    <string name="course_button_text">Add Course</string>
+    <string name="course_button_text_edit">Save Edits</string>
+    <string name="assessment_title">Assessment Title:</string>
+    <string name="assessment_title2">Title:</string>
+    <string name="assessment_type">Type:</string>
+    <string name="assessment_button_text">Add Assessment</string>
+    <string name="assessment_button_text_edit">Save Edits</string>
+    <string name="instructor_name">Instructor Name</string>
+    <string name="instructor_phone">Instructor Phone</string>
+    <string name="instructor_email">Instructor Email</string>
+    <string name="instructor_information">Instructor Information:</string>
+    <string name="name">Name:</string>
+    <string name="phone">Phone:</string>
+    <string name="email">Email:</string>
+    <string name="course_optional_notes">Course Optional Notes:</string>
+    <string name="edit_assessment">Edit Assessment</string>
+    <string name="delete_assessment">Delete Assessment</string>
+    <string name="set_alerts">Set Alerts</string>
+    <string name="edit_course">Edit Course</string>
+    <string name="delete_course">Delete Course</string>
+    <string name="share_course_notes">Share Course Notes</string>
+    <string name="channel_name_assessment">assessment_channel</string>
+    <string name="channel_description_assessment">assessment_channel_description</string>
+    <string name="channel_description_course">channel_course_description</string>
+    <string name="channel_name_course">channel_course</string>
+
+    <string-array name="course_status">
+        <item>In Progress</item>
+        <item>Completed</item>
+        <item>Dropped</item>
+        <item>Plan To Take</item>
+    </string-array>
+
+    <string-array name="assessment_type">
+        <item>Performance</item>
+        <item>Objective</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Student Progress Tracker"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppDayAndNight">
+
+        <receiver
+            android:name=".receivers.CourseNotificationReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".receivers.AssessmentNotificationReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.terms.AddTermActivity"
+            android:exported="false"
+            android:label="Add Term"
+            android:parentActivityName=".ui.dashboard.DashboardActivity" />
+        <activity
+            android:name=".ui.terms.EditTermActivity"
+            android:exported="false"
+            android:label="Edit Term"
+            android:parentActivityName=".ui.terms.TermDetailsActivity" />
+        <activity
+            android:name=".ui.courses.AddCourseActivity"
+            android:exported="false"
+            android:label="Add Course"
+            android:parentActivityName=".ui.terms.TermDetailsActivity" />
+        <activity
+            android:name=".ui.courses.EditCourseActivity"
+            android:exported="false"
+            android:label="Edit Course"
+            android:parentActivityName=".ui.courses.CourseDetailsActivity" />
+        <activity
+            android:name=".ui.assessments.AddAssessmentActivity"
+            android:exported="false"
+            android:label="Add Assessment"
+            android:parentActivityName=".ui.courses.CourseDetailsActivity" />
+        <activity
+            android:name=".ui.assessments.EditAssessmentActivity"
+            android:exported="false"
+            android:label="Edit Assessment"
+            android:parentActivityName=".ui.assessments.AssessmentDetailsActivity" />
+        <activity
+            android:name=".ui.assessments.AssessmentDetailsActivity"
+            android:exported="false"
+            android:label="Assessment Details"
+            android:parentActivityName=".ui.courses.CourseDetailsActivity" />
+        <activity
+            android:name=".ui.terms.TermDetailsActivity"
+            android:exported="false"
+            android:label="Term Details"
+            android:parentActivityName=".ui.dashboard.DashboardActivity" />
+        <activity
+            android:name=".ui.courses.CourseDetailsActivity"
+            android:exported="false"
+            android:label="Course Details"
+            android:parentActivityName=".ui.terms.TermDetailsActivity" />
+        <activity
+            android:name=".ui.dashboard.DashboardActivity"
+            android:exported="false"
+            android:label="Dashboard" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

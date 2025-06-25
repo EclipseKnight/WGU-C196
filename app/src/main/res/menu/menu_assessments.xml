@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_zero_assessments"
+        android:title="@string/set_alerts"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_one_assessments"
+        android:title="@string/edit_assessment"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_two_assessments"
+        android:title="@string/delete_assessment"
+        app:showAsAction="never"/>
+
+</menu>

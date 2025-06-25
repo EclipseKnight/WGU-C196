@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.dashboard.DashboardActivity">
+
+    <ScrollView
+        android:id="@+id/svContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <GridLayout
+            android:id="@+id/gridLayoutButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="5"
+            android:orientation="horizontal"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:useDefaultMargins="true"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp">
+
+            <!-- Button 1 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_first"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="First"
+                android:padding="24dp"
+                android:importantForAccessibility="yes"/>
+
+            <!-- Button 2 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_second"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Second"
+                android:padding="24dp"
+                android:importantForAccessibility="yes"/>
+
+            <!-- Button 3 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_third"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Third"
+                android:padding="24dp"
+                android:importantForAccessibility="yes"/>
+
+            <!-- Button 4 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_fourth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Fourth"
+                android:padding="24dp"
+                android:importantForAccessibility="yes"/>
+
+            <!-- Button 5 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_fifth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Fifth"
+                android:padding="24dp"
+                android:importantForAccessibility="yes"/>
+
+            <!-- Button 6 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_sixth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Sixth"
+                android:padding="24dp"
+                android:importantForAccessibility="yes"/>
+
+            <!-- Button 7 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_seventh"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Seventh"
+                android:padding="24dp"
+                android:importantForAccessibility="yes"/>
+
+            <!-- Button 8 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_eighth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Eighth"
+                android:padding="24dp"
+                android:importantForAccessibility="yes"/>
+
+            <!-- Button 9 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_ninth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Ninth"
+                android:padding="24dp"
+                android:importantForAccessibility="yes"/>
+
+            <!-- Button 10 -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_tenth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:text="Tenth"
+                android:padding="24dp"
+                android:importantForAccessibility="yes"/>
+
+        </GridLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="17dp"
+        android:contentDescription="@string/fab_button"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

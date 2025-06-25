@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.courses.AddCourseActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/course_title"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"/>
+
+            <EditText
+                android:id="@+id/courseTitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="@string/course_title" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/term_start_date"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp" />
+
+            <Button
+                android:id="@+id/datePickerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/term_date_text"
+                android:background="?attr/selectableItemBackground"
+                android:textColor="@color/datePickerTextColor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/term_end_date"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp" />
+
+            <Button
+                android:id="@+id/datePickerButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/term_date_text"
+                android:background="?attr/selectableItemBackground"
+                android:textColor="@color/datePickerTextColor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/course_status"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/course_instructor_info"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/course_instructor_name"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp" />
+
+            <EditText
+                android:id="@+id/courseInstructorName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="@string/course_instructor_name" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/course_instructor_phone"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp" />
+
+            <EditText
+                android:id="@+id/courseInstructorPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:hint="@string/course_instructor_phone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/course_instructor_email"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp" />
+
+            <EditText
+                android:id="@+id/courseInstructorEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="@string/course_instructor_email" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/course_instructor_notes"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp" />
+
+            <EditText
+                android:id="@+id/courseOptionalNoteText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="@string/course_instructor_notes" />
+
+            <!-- Spacer to prevent content overlap with button -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addCourseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/course_button_text"
+        android:layout_margin="20dp"
+        android:backgroundTint="?attr/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_gravity="bottom"
+        app:cornerRadius="16dp"
+        app:layout_anchorGravity="bottom|center" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
