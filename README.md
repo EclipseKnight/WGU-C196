@@ -1,3 +1,5 @@
+Written By Jonathan Paquin for WGU Course C196
+
 # 📱 Mobile Application Development - C196
 
 Welcome to the Student Scheduler and Progress Tracking Application, a mobile app designed for students to manage academic terms, courses, assessments, and instructor information all in one place.
